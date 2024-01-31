@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script src="scripts/functions.js"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="/images/Ksenia Anske_Blog_Guest Post_ Real World Writing Schedules.jpg">
+        </div>
+        <h1>Tick Tock</h1>
+    </header>
+    <nav id="navBar">
+        <a href="/myWebsite.html">Home Page |</a>
+        <a href="pages/men_section.html">Men Section | </a>
+        <a href="pages/women_section.html">Women Section | </a> 
+        <a href="pages/kids_section.html">Kids Section </a>
+        <a id="register" href="pages/registration.html">Register </a>
+    </nav>
+    <div class="table">
+        <div class="row">
+            <div class="cell">
+                <h3>Register</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell">
+                <label for="firstname">First Name:</label>
+                <input type="text" size="20" maxlength="20" id="firstname" autofocus onchange="enableInput();">
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell">
+                <label for="lastname">Last Name:</label>
+                <input type="text" size="20" maxlength="20" id="lastname">
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell">
+                <label for="section">Section: </label>
+                <select name="section" id="section">
+                    <option value="default">&nbsp;</option>
+                    <option value="man">Man</option>
+                    <option value="woman">Women</option>
+                    <option value="kid">Kid</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell">
+                <label for="email">Email Address:</label>
+                <input type="email" size="20" maxlength="20">
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell">
+                <label for="password">Password:</label>
+                <input type="password" size="20" maxlength="20">
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell">
+                <input type="submit" value="Register">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+header {
+    background-color: rgb(28,29,31);
+    color: aliceblue;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: auto;
+    height: 80px;
+    padding-top: 10px;
+    border-bottom: thin solid white;
+}
+header img {
+    float: left;
+    height: 80px;
+    width: 80px;
+}
+#navBar {
+    background-color: white;
+    padding: 15px;
+    font-size: larger;
+    border-bottom:  dashed rgb(28,29,31) thick;
+    margin-bottom: 30px;
+}
+h4 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(28,29,31);
+    color: aliceblue;
+    padding: 10px;
+    margin: 0px;
+}
+#h2section {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:bold;
+    margin-top: 30px;
+    margin-left: 30px;
+    height: auto;
+    width: 500px;
+}
+#psection {
+    margin-top: 30px;
+    margin-left: 30px;
+    height: auto;
+    width: 400px;
+    font-size: large;
+    margin-bottom: 30px;
+}
+#list {
+    margin-left: 30px;
+    margin-bottom: 32px;
+
+}
+#video {
+    float: right;
+}
+footer div {
+    bottom: 0;
+    width: 100%;
+}
+
+.images {
+    margin-top: 30px;
+    margin-left: 30px;
+    height: 70px;
+    width: 70px;
+}
+
+table {
+    width: auto;
+    font: 19px Arial;
+}
+
+table, th, td {
+    margin-left: 50px;
+    border: solid 2px #D1D3D5;
+    border-collapse: collapse;
+    padding: 3px 4px;
+    text-align: center;
+    margin-bottom: 20PX;
+}
+
+img {width: 64%;}
+
+#register {
+    position: absolute;
+    left: 1250px;
+    top: 104px;
+    font-size:medium;
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+    border: solid black thin;
+    border-radius: 15px;
+}
+
+a :hover{
+    background-color: grey;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.table {
+    display: table;
+    margin-left: 550px;
+    border: solid rgb(28,29,31) thick;
+    border-radius: 15px;
+    padding: 10px;
+}
+.row {
+    display: table-row;
+}
+.cell {
+    padding: 10px;
+    display: inline-block;
+    size: 300px;
+}
+label {
+    display: inline-block;
+    width: 80px;
+}
+input {
+    margin: 5px;
+    padding: 5px;
+}
