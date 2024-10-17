@@ -613,6 +613,17 @@ a:hover {
   line-height: 0.8;
   color: var(--clr-main);
 }
+
+.info-number {
+  display: flex;
+  margin-right: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 0.8;
+  color: var(--clr-main);
+}
+
 .info-items-list .info-icon {
   display: flex;
   margin-right: 1.25rem;
@@ -2133,8 +2144,8 @@ body.rounded-btns .read-more {
 }
 
 .dot {
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   background-color: #ddd;
   border: none;
   border-radius: 50%;
@@ -2165,7 +2176,7 @@ body.rounded-btns .read-more {
 /* Media query for mobile devices */
 @media only screen and (max-width: 768px) {
   .smoothsection {
-    height: auto; /* Disable the 100vh height for mobile */
+    height: auto;
   }
 }
 
@@ -2822,7 +2833,6 @@ body.rounded-btns .read-more {
   text-transform: uppercase;
 }
 
-
 .services-boxed .service-box .read-more {
   color: var(--clr-main);
   border: none;
@@ -3019,10 +3029,10 @@ body.rounded-btns .read-more {
 }
 .about .img-area .about-img {
   transform: scaleX(1);
-  background-color: transparent;}
+  background-color: transparent;
+}
 
-
-  /* Mobile mode: Hide the image */
+/* Mobile mode: Hide the image */
 @media (max-width: 768px) {
   .img-area {
     display: none;
@@ -4768,4 +4778,110 @@ body.dark-theme .about .stats-counter.stats-cards .stat-box {
 
 #creadits {
   color: var(--clr-grey);
+}
+/* CSS for Services Section */
+.services-section {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hide mobile swiper on larger screens */
+.mobile-services {
+  display: none; /* Hide by default */
+}
+
+/* Show mobile swiper only on mobile devices */
+@media (max-width: 767px) {
+  .mobile-services {
+    display: block; /* Show on mobile */
+  }
+}
+
+/* Hide services section on mobile devices */
+@media (min-width: 768px) {
+  .mobile-services {
+    display: none; /* Hide on larger screens */
+  }
+}
+
+/* Specific styles for Mobile Services Section */
+.mobile-services .mobile-services {
+  position: relative; /* Ensure the child elements can be positioned relative to this */
+}
+
+.mobile-services .service-card {
+  position: relative; /* Needed for positioning the chip */
+  padding: 20px; /* Adjust padding as needed */
+  border: 1px solid var(--clr-main); /* Optional: Add border for better visibility */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  background-color: transparent; /* Background color of the service card */
+  max-width: 408px;
+}
+
+/* Chip styles */
+.mobile-services .vr-chip {
+  position: absolute; /* Position the chip absolutely */
+  top: 10px; /* Distance from the top */
+  right: 10px; /* Distance from the right */
+  background-color: var(--clr-main); /* Background color for the chip */
+  color: #fff; /* Text color */
+  padding: 5px 10px; /* Padding around the text */
+  border-radius: 15px; /* Rounded corners */
+  font-size: 14px; /* Adjust font size as needed */
+  font-weight: bold; /* Make the text bold */
+}
+
+/* Icon styles */
+.mobile-services .service-icon {
+  margin-bottom: 0.5rem;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.mobile-services .service-icon .font-icon {
+  display: block;
+  line-height: 1rem;
+  font-size: 2.5rem;
+  color: var(--clr-main);
+  transform-origin: center;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+
+.mobile-services .service-title {
+  font-size: 20px; /* Adjust title font size */
+  margin: 10px 0; /* Add margin around title */
+}
+
+.swiper-pagination {
+  text-align: center; /* Center the dots */
+  padding: 10px 0; /* Add padding */
+}
+
+.swiper-pagination-bullet {
+  width: 10px; /* Width of the bullet */
+  height: 10px; /* Height of the bullet */
+  background: var(--clr-main); /* Color of the bullet */
+  opacity: 0.7; /* Transparency of the bullet */
+  margin: 0 5px; /* Space between bullets */
+  border-radius: 50%; /* Make bullets round */
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1; /* Fully visible for active bullet */
+  background: var(--clr-secondary); /* Different color for the active bullet */
+}
+
+@media (max-width: 768px) {
+  /* Adjust the max-width as needed for your breakpoints */
+  .services-section {
+    overflow: hidden; /* This prevents elements from overflowing */
+  }
+}
+
+
+/* Show mobile swiper only on mobile devices */
+@media (max-width: 767px) {
+  #about1desktop {
+    display: none; /* Show on mobile */
+  }
 }
