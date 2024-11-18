@@ -1,35 +1,28 @@
 <?php
-require 'C:/Users/user/Downloads/PHPMailer-master/PHPMailer-master/src/Exception.php';
-require 'C:/Users/user/Downloads/PHPMailer-master/PHPMailer-master/src/PHPMailer.php';
-require 'C:/Users/user/Downloads/PHPMailer-master/PHPMailer-master/src/SMTP.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-$mail = new PHPMailer(true);
+require 'phpmailer/src/Exception.php';
+require 'phpmailer/src/PHPMailer.php';
+require 'phpmailer/src/SMTP.php';
 
-try {
-    //Server settings
-    $mail->isSMTP();
-    $mail->Host = 'smtp.gmail.com';  // Set the SMTP server to send through
-    $mail->SMTPAuth = true;
-    $mail->Username = 'sameeratarkhan13@gmail.com';  // SMTP username
-    $mail->Password = 'SEOS BZBF ABHK CRMC';  // SMTP password
-    $mail->SMTPSecure = 'tls';  // Enable TLS encryption
-    $mail->Port = 587;
+if(isset($_POST["UserSubmit"])) {
+    $mail = new PHPMailer(true);
+        $mail->isSMTP();
+        $mail->Host = 'smtp.gmail.com';  // Set the SMTP server to send through
+        $mail->SMTPAuth = true;
+        $mail->Username = 'admin@ataatech.com';  // Use environment variables for security
+        $mail->Password = 'qifp aeuw selj pjop';  // Use environment variables for security
+        $mail->SMTPSecure = 'ssl';  // Enable TLS encryption
+        $mail->Port = 465;
 
-    //Recipients
-    $mail->setFrom('sameeratarkhan13@gmail.com', 'Mailer');
-    $mail->addAddress('sameera.tarkhan@ataatech.com');  // Add a recipient
+        $mail->setFrom($_POST["UserEmail"]);
+        $mail->addAddress('admin@ataatech.com');  // Add a recipient
+        $mail->isHTML(true);
+        $mail->Subject = $_POST["subject"];
+        $mail->Body    = $_POST["message"];
 
-    // Content
-    $mail->isHTML(true);
-    $mail->Subject = 'Subject';
-    $mail->Body    = 'This is the HTML message body';
-    $mail->AltBody = 'This is the plain text message body';
-
-    $mail->send();
-    echo 'Message has been sent';
-} catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+        $mail->send();
 }
+?>

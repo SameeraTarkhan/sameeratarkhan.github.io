@@ -643,6 +643,26 @@ a:hover {
   transition: transform 0.3s ease-in-out 0s;
 }
 
+.info-item .info-icon {
+  display: inline-block;
+  margin-right: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--clr-main);
+  font-size: 2rem;
+  padding: 0.75rem;
+  padding-bottom: 0.3rem;
+  border-radius: 0.25rem;
+  background-color: rgba(var(--clr-main-rgb), 0.15);
+  transition: all 0.3s ease-in-out 0s;
+}
+.info-item .info-img-icon {
+  margin-right: 1.5rem;
+  margin-bottom: 1.5rem;
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s ease-in-out 0s;
+}
+
 *::selection {
   background: var(--clr-main);
   color: var(--clr-white);
@@ -2173,10 +2193,17 @@ body.rounded-btns .read-more {
   align-items: center;
 }
 
-/* Media query for mobile devices */
-@media only screen and (max-width: 768px) {
+/* Disable smoothsection for small and medium screens */
+@media only screen and (max-width: 992px) {
   .smoothsection {
-    height: auto;
+    height: auto; /* Override smooth scrolling behavior */
+  }
+}
+
+/* Ensure smoothsection applies for large screens */
+@media only screen and (min-width: 992px) {
+  .smoothsection {
+    height: 100vh; /* Example: full viewport height */
   }
 }
 
@@ -4783,6 +4810,7 @@ body.dark-theme .about .stats-counter.stats-cards .stat-box {
 .services-section {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 /* Hide mobile swiper on larger screens */
@@ -4815,7 +4843,9 @@ body.dark-theme .about .stats-counter.stats-cards .stat-box {
   border: 1px solid var(--clr-main); /* Optional: Add border for better visibility */
   border-radius: 10px; /* Optional: Add rounded corners */
   background-color: transparent; /* Background color of the service card */
-  max-width: 408px;
+  width: 96%;
+  margin: 0 auto; /* Horizontally center the card */
+  display: block;
 }
 
 /* Chip styles */
@@ -4884,4 +4914,46 @@ body.dark-theme .about .stats-counter.stats-cards .stat-box {
   #about1desktop {
     display: none; /* Show on mobile */
   }
+}
+.mobile-services.swiper-container {
+  width: 100%; /* Constrain swiper to the screen width */
+  overflow: hidden; /* Prevent overflow beyond the container */
+}
+
+.mobile-services .swiper-slide {
+  width: 100%; /* Ensure each slide takes up 100% of the swiper's width */
+}
+
+@media (max-width: 767px) {
+  .service-card, .grid-content {
+    margin: 0;
+  }
+}
+
+.vr-chip.metaverse::before {
+  content: attr(data-full-text);
+}
+
+@media (min-width: 768px) and (max-width: 1400px) {
+  .vr-chip.metaverse::before {
+    content: attr(data-short-text);
+  }
+}
+
+
+#services .services-row .col-lg-3,
+#services .services-row .col-md-4,
+#services .services-row .col-sm-6,
+#services .services-row .col-12 {
+  display: flex;
+}
+
+#services .service-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#services .service-content {
+  flex-grow: 1;
 }
