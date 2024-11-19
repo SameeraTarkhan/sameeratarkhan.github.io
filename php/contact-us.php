@@ -7,22 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
         
         <!-- fav icon -->
-        <link rel="icon" href="assets/images/fav-icon/fav-icon.png">
+        <link rel="icon" href="../assets/images/fav-icon/fav-icon.png">
         
         <!-- bootstarp -->
-        <link rel="stylesheet" href="css/vendors/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/vendors/bootstrap.min.css">
         
         <!-- animate.css file -->
-        <link rel="stylesheet" href="css/vendors/animate.css">
+        <link rel="stylesheet" href="../css/vendors/animate.css">
         
         <!-- flaticon -->
-        <link rel="stylesheet" href="css/vendors/flaticon/flaticon.css">
+        <link rel="stylesheet" href="../css/vendors/flaticon/flaticon.css">
         
         <!-- fontAwesome -->
-        <link rel="stylesheet" href="css/vendors/all.min.css">
+        <link rel="stylesheet" href="../css/vendors/all.min.css">
         
         <!-- bootstrap icons -->
-        <link rel="stylesheet" href="css/vendors/bootstrap-icons-1.9.1/bootstrap-icons.css">
+        <link rel="stylesheet" href="../css/vendors/bootstrap-icons-1.9.1/bootstrap-icons.css">
         
         <!-- Font Family -->
         <link
@@ -30,7 +30,7 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       />   
         <!-- main-LTR -->
-        <link rel="stylesheet" href="css/main-LTR.css">
+        <link rel="stylesheet" href="../css/main-LTR.css">
         <title> Thru   |   Contact Us</title>
   </head>
   <body class=" dark-theme ">
@@ -38,15 +38,15 @@
     <header class=" page-header   inner-page-header header-basic" id="page-header">
       <div class="container">
         <nav class="menu-navbar">
-          <div class="header-logo"><a class="logo-link" href="#"><img class="logo-img light-logo" loading="lazy" src="assets/images/logo/logo-light.png" alt="logo" width="60%"/><img class="logo-img  dark-logo" loading="lazy" src="assets/images/logo/logo-light.png" alt="logo" width="60%"/></a></div>
+          <div class="header-logo"><a class="logo-link" href="#"><img class="logo-img light-logo" loading="lazy" src="../assets/images/logo/logo-light.png" alt="logo" width="60%"/><img class="logo-img  dark-logo" loading="lazy" src="assets/images/logo/logo-light.png" alt="logo" width="60%"/></a></div>
           <div class="links menu-wrapper ">
             <ul class="list-js links-list">
-              <li class="menu-item has-sub-menu"><a class="menu-link  " href="index.html">home </a>
+              <li class="menu-item has-sub-menu"><a class="menu-link  " href="../index.html">home </a>
               </li>
-              <li class="menu-item"><a class="menu-link  " href="about-us.html">about us </a></li>
-              <li class="menu-item has-sub-menu"><a class="menu-link  " href="services.html">services</a>
+              <li class="menu-item"><a class="menu-link  " href="../about-us.html">about us </a></li>
+              <li class="menu-item has-sub-menu"><a class="menu-link  " href="../services.html">services</a>
               </li>
-              <li class="menu-item"><a class="menu-link   active" href="contact-us.php">contact us </a></li>
+              <li class="menu-item"><a class="menu-link   active" href="#">contact us </a></li>
             </ul>
           </div>
           <div class="controls-box">
@@ -226,7 +226,7 @@
     <footer class="page-footer dark-color-footer" id="footer">
       <div
         class="overlay-photo-image-bg"
-        data-bg-img="assets/images/sections-bg-images/footer-bg-1.jpg"
+        data-bg-img="../assets/images/sections-bg-images/footer-bg-1.jpg"
         data-bg-opacity=".25"
       ></div>
       <div class="container">
@@ -235,7 +235,7 @@
             <img
               class="img-fluid footer-logo"
               loading="lazy"
-              src="assets/images/logo/logo-light.png"
+              src="../assets/images/logo/logo-light.png"
               alt="logo"
             />
             <div class="footer-col-content-wrapper">
@@ -335,15 +335,15 @@
     <!-- End back-to-top Button-->
         
         <!--     JQuery     -->
-        <script src="js/vendors/jquery-3.6.1.min.js"></script>
+        <script src="../js/vendors/jquery-3.6.1.min.js"></script>
         
         <!--     bootstrap     -->
-        <script src="js/vendors/bootstrap.bundle.min.js"></script>
+        <script src="../js/vendors/bootstrap.bundle.min.js"></script>
         
         <!--     wow     -->
-        <script src="js/vendors/wow.min.js"></script>
+        <script src="../js/vendors/wow.min.js"></script>
         
         <!--     main     -->
-        <script src="js/main.js"></script>
+        <script src="../js/main.js"></script>
   </body>
 </html>
