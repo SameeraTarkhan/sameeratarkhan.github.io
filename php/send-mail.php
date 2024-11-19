@@ -18,6 +18,7 @@ if(isset($_POST["UserSubmit"])) {
         $mail->Port = 465;
 
         $mail->setFrom($_POST["UserEmail"]);
+        $mail->addReplyTo($userEmail);
         $mail->addAddress('admin@ataatech.com');  // Add a recipient
         $mail->isHTML(true);
         $mail->Subject = $_POST["subject"];
