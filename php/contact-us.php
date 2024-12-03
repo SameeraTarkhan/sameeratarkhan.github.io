@@ -46,6 +46,9 @@
               <li class="menu-item"><a class="menu-link  " href="../about-us.html">about us </a></li>
               <li class="menu-item has-sub-menu"><a class="menu-link  " href="../services.html">services</a>
               </li>
+              <li class="menu-item has-sub-menu">
+                <a class="menu-link" href="../articles.html">articles</a>
+              </li>
               <li class="menu-item"><a class="menu-link   active" href="#">contact us </a></li>
             </ul>
           </div>
