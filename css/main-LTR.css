@@ -2148,12 +2148,6 @@ body.rounded-btns .read-more {
   z-index: 3;
 }
 
-/* Sections styling */
-/* Sections styling */
-.nav-dot {
-  overflow: hidden;
-}
-
 /* Navigation dots styling */
 .nav-dots {
   position: fixed;
@@ -2164,14 +2158,17 @@ body.rounded-btns .read-more {
   flex-direction: column;
 }
 
+/* Dot styles */
 .dot {
   background-color: #ddd;
   border: none;
   border-radius: 50%; /* Ensures the shape is a circle */
-  margin: 0;
+  margin: 2px 0; /* Reduces space between dots */
   cursor: pointer;
   transition: background-color 0.3s;
   box-sizing: border-box;
+  width: 10px; /* Adjust size as needed */
+  height: 10px; /* Match width for a perfect circle */
 }
 
 /* Active and hover states */
@@ -2183,24 +2180,18 @@ body.rounded-btns .read-more {
   background-color: #555; /* Darker color on hover */
 }
 
-ul {
-  list-style-type: disc; /* Ensure bullet points are displayed */
-}
-
-ul li::marker {
-  font-size: 2rem; /* Adjust bullet size */
-}
-
-ul {
+/* List styling for dots */
+.dots-list {
   padding: 0; /* Removes default padding from the list */
   margin: 0; /* Removes default margin from the list */
 }
 
-ul li {
-  margin: 0; /* Removes vertical space between list items */
+.dots-list li {
+  margin: 40% 10px; /* Reduces vertical space between list items */
   padding: 0; /* Ensures no extra padding inside list items */
-  line-height: 1.2; /* Adjusts spacing between lines if needed */
+  list-style: none; /* Removes default bullet points */
 }
+
 
 #contactus {
   margin-top: 2rem;
