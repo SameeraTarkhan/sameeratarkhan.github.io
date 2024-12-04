@@ -2164,8 +2164,8 @@ body.rounded-btns .read-more {
 }
 
 .dot {
-  width: 2vw; /* or adjust as needed */
-  height: 2vw; /* keep consistent with width */
+  width: 1vw; /* or adjust as needed */
+  height: 1vw; /* keep consistent with width */
   background-color: #ddd;
   border: none;
   border-radius: 50%;
@@ -2175,6 +2175,12 @@ body.rounded-btns .read-more {
   box-sizing: border-box;
 }
 
+@media only screen and (min-resolution: 2dppx) {
+  .dot {
+    width: 2vw; /* Adjust to suit high-res screens */
+    height: 2vw;
+  }
+}
 
 .dot.active {
   background-color: #333;
