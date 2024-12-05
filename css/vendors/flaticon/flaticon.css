@@ -20,7 +20,27 @@ i[class*=" flaticon-"]:before {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.flaticon-barchart:before {
+  content: "\1F4CA";
+}
+.flaticon-global:before {
+  content: "\f301";
+}
+.flaticon-circled-dollar:before {
+  content: "\24B8";
+}
+.flaticon-fullwidth-dollar:before {
+  content: "\FF04";
+}
+.flaticon-usd:before {
+  content: "\24";
+}
+.flaticon-chart:before {
+  content: "\f120";
+}
+.flaticon-dollar:before {
+  content: "\0024";
+}
 .flaticon-facebook:before {
   content: "\f101";
 }

@@ -2703,6 +2703,15 @@ body.rounded-btns .read-more {
   transform-origin: center;
   transition: all 0.3s ease-in-out 0s;
 }
+
+.font-icon-article {
+  display: block;
+  line-height: 1rem;
+  font-size: 2.5rem;
+  color: var(--clr-main);
+  transform-origin: center;
+  transition: all 0.3s ease-in-out 0s;
+}
 .services-boxed .service-num {
   font-size: 1rem;
   font-weight: 300;
@@ -4304,19 +4313,24 @@ body.rounded-btns .read-more {
 }
 .blog .post-main-area .post-content .post-img-wrapper {
   margin: 1rem 0;
-  max-height: 300px;
+  max-height: 300px; /* Set the specific container height */
   overflow: hidden;
+  display: flex; /* Ensures the image is centered */
+  justify-content: center;
+  align-items: center;
+}
+
+.blog .post-main-area .post-content .post-img-wrapper img {
+  height: 100%; /* Make the image take the full height of the container */
+  width: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensures the image covers the container without distortion */
 }
 @media (max-width: 767px) {
   .blog .post-main-area .post-content .post-img-wrapper {
     height: 350px;
   }
 }
-.blog .post-main-area .post-content .post-img-wrapper img {
-  width: 100%;
-  height: 100%; /* Ensures the image fits the container */
-  object-fit: contain;
-}
+
 .blog .post-main-area .post-content .post-list {
   list-style: none;
   margin: 0;
@@ -4559,6 +4573,73 @@ body.rounded-btns .read-more {
   color: var(--clr-main);
 }
 
+.mobile-services .post-img-wrapper {
+  height: 210px; /* Adjust to the desired height */
+  overflow: hidden; /* Ensures any overflow content is hidden */
+  display: flex; /* Ensures the image centers within the container */
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-services .post-img {
+  height: 100%; /* Makes the image fit the wrapper's height */
+  width: 100%; /* Maintains the aspect ratio */
+  object-fit: cover; /* Ensures the image covers the wrapper */
+}
+
+.mobile-services .post-title {
+  font-size: 1.2rem; /* Adjust the size as needed */
+  line-height: 1.4; /* Adjust the line height for readability */
+  font-weight: 600; /* Optional: Modify font weight if necessary */
+  margin: 0.5rem; /* Optional: Adjust spacing below the title */
+}
+
+.mobile-services .post-excerpt {
+  margin: 0.5rem;
+}
+
+.mobile-services .read-more {
+  margin: 0.5rem;
+}
+
+.swiper-slide .post-box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 1rem 0;
+  border-radius: 0.25rem;
+  background-color: rgba(var(--clr-main-rgb), 0.15);
+  padding-bottom: 1rem;
+}
+
+
+@media (max-width: 768px) {
+  #article {
+    display: none;
+  }
+}
+
+#article-phone {
+  display: none;
+}
+
+/* Show only on mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+  #article-phone {
+    display: block;
+  }
+}
+
+.post-box .post-img-wrapper {
+  height: 210px; /* Set the desired height */
+  overflow: hidden; /* Ensure overflow content is hidden */
+}
+
+.post-box .post-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the container without distortion */
+}
 /*    End blog Page  */
 /*   Start 404 Page  */
 .err-404 {
@@ -4676,49 +4757,39 @@ body.rounded-btns .read-more {
 /*   End 404 Page  */
 
 /*   Start stats section Rules  */
-.stats {
-  position: relative;
-  overflow: hidden;
-  z-index: 0;
-  background-color: var(--clr-dark-blue);
-}
-.stats .section-heading .line-solid-color {
+.section-heading .line-solid-color {
   background: var(--clr-white);
 }
-.stats .stat-box {
+.stat-box-inner {
   position: relative;
-  text-align: center;
-}
-@media (max-width: 767px) {
-  .stats .stat-box {
-    padding: 1rem 3rem;
-  }
-}
-.stats .stat-box-inner {
-  text-align: left;
-  position: relative;
-  padding: 1rem 0rem;
-  color: var(--clr-white);
-  background-color: rgba(var(--clr-dark-blue-rgb), 0.25);
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start */
 }
 
-.stats .stat-box-inner::before {
-  content: '';
-  display: block;
-  width: 10%;
-  height: 0.25rem;
-  background-color: rgba(var(--clr-main-rgb), 1);
-  position: absolute;
-  top: 0;
-  left: 0;
+.stat-header {
+  display: flex;
+  align-items: center; /* Align icon and title in a row */
+  margin-bottom: 1rem; /* Space between the header and the description */
 }
 
-.stats .stat-desc {
+.stat-header i {
+  font-size: 2rem; /* Adjust icon size */
+  color: rgba(var(--clr-main-rgb), 1); /* Match icon color */
+  margin-right: 0.5rem; /* Space between icon and title */
+}
+
+.stat-desc {
   font-size: 1.25rem;
   font-weight: 700;
-  display: block;
   text-transform: capitalize;
 }
+
+.stat-details {
+  font-size: 1rem; /* Adjust the size of the description */
+}
+
 
 /*  End  stats section Rules    */
 
