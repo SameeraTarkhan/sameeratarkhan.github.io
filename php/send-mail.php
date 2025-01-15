@@ -14,8 +14,8 @@ if(isset($_POST["UserSubmit"])) {
         $mail->Host = 'smtp.gmail.com';  // Set the SMTP server to send through
         $mail->SMTPAuth = true;
         $mail->Username = 'thrusameera@gmail.com';  // Use environment variables for security
-        $mail->Password = 'pkhc qefw wvbc tahp';  // Use environment variables for security
-        $mail->SMTPSecure 'ssl';
+        $mail->Password = 'Znsmzelnsss13';  // Use environment variables for security
+        $mail->SMTPSecure = 'ssl';
         $mail->Port = 465;
 
         // Sender's email
