@@ -1,9 +1,8 @@
 /*===================================================
-Project: Thru - IT Solutions & Business Services Responsive HTML5 Bootstrap5  Website Template 
-Auther: amin-themes
+Project: Thru
+Auther: Thru
 Version: 2.0
 Last change:22 Mar 2023
-Template Description: IT Solutions & Business Services Responsive HTML5 Bootstrap5  Website Template 
 ====================================================*/
 
 //GLOBAL VARIBALES
